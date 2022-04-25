@@ -45,6 +45,7 @@ return [
     'NAME' => 'Name',
     'PAGES' => 'Pages',
     'SUBSCRIPTION' => 'Subscription',
+    'TRIPLES' => 'Triples',
     'UNKNOWN' => 'Unknown',
     'WARNING' => 'WARNING',
 
