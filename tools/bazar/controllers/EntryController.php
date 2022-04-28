@@ -11,6 +11,7 @@ use YesWiki\Bazar\Service\EntryManager;
 use YesWiki\Bazar\Service\FormManager;
 use YesWiki\Bazar\Service\SemanticTransformer;
 use YesWiki\Core\Service\AclService;
+use YesWiki\Core\Service\FavoritesManager;
 use YesWiki\Core\Service\PageManager;
 use YesWiki\Core\Service\TemplateEngine;
 use YesWiki\Core\Service\UserManager;
@@ -20,6 +21,7 @@ use YesWiki\Security\Controller\SecurityController;
 class EntryController extends YesWikiController
 {
     protected $entryManager;
+    protected $favoritesManager;
     protected $formManager;
     protected $aclService;
     protected $semanticTransformer;
@@ -33,6 +35,7 @@ class EntryController extends YesWikiController
 
     public function __construct(
         EntryManager $entryManager,
+        FavoritesManager $favoritesManager,
         FormManager $formManager,
         AclService $aclService,
         SemanticTransformer $semanticTransformer,
@@ -42,6 +45,7 @@ class EntryController extends YesWikiController
         UserManager $userManager
     ) {
         $this->entryManager = $entryManager;
+        $this->favoritesManager = $favoritesManager;
         $this->formManager = $formManager;
         $this->aclService = $aclService;
         $this->semanticTransformer = $semanticTransformer;
@@ -172,6 +176,11 @@ class EntryController extends YesWikiController
             $_GET['vue'] = 'consulter';
         }
 
+        $user = $this->userManager->getLoggedUser();
+        if (!empty($user) && $this->favoritesManager->areFavoritesActivated()) {
+            $currentuser = $user['name'];
+            $isUserFavorite = $this->favoritesManager->isUserFavorite($currentuser, $entryId);
+        }
         return $this->render('@bazar/entries/view.twig', [
             "form" => $form,
             "entry" => $entry,
@@ -179,6 +188,8 @@ class EntryController extends YesWikiController
             "owner" => $owner,
             "message" => $message,
             "showFooter" => $showFooter,
+            "currentuser" => $currentuser ?? null,
+            "isUserFavorite" => $isUserFavorite ?? false,
             "canShow" => $this->wiki->GetPageTag() != $entry['id_fiche'], // hide if we are already in the show page
             "canEdit" =>  !$this->securityController->isWikiHibernated() && $this->aclService->hasAccess('write', $entryId),
             "canDelete" => !$this->securityController->isWikiHibernated() && ($this->wiki->UserIsAdmin($userNameForRendering) || $this->wiki->UserIsOwner($entryId)),
