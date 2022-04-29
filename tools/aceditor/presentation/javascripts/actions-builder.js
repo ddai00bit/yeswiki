@@ -206,7 +206,7 @@ window.myapp = new Vue({
         var configValue = this.selectedAction.properties[propName].value || this.selectedAction.properties[propName].default
         if (configValue && !this.values[propName]) Vue.set(this.values, propName, configValue)
       }
-      if (this.selectedAction.properties && this.selectedAction.properties.template) this.values.template = this.selectedAction.properties.template.value
+      if (this.selectedActionId == 'bazarliste' && this.selectedAction.properties && this.selectedAction.properties.template) this.values.template = this.selectedAction.properties.template.value
       setTimeout(() => this.updateActionParams(), 0);
     },
     updateActionParams() {
