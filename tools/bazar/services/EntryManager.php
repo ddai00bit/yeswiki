@@ -553,7 +553,7 @@ class EntryManager
         // on remet l'utilisateur initial s'il y en avait un
         if (isset($GLOBALS['utilisateur_wikini']) && !empty($olduser)) {
             $this->userManager->logout();
-            $this->userManager->login($olduser, 1);
+            $this->userManager->login($olduser, $olduser['remember'] ?? 1);
         }
 
         // if sendmail has referenced email fields, send an email to their adresses
