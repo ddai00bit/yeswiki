@@ -47,6 +47,12 @@ return [
     "MULTIDELETE_END" => "Suppressions réalisées",
     "MULTIDELETE_ERROR" => "L'élément {itemId} n'a pas été supprimé ! {error}",
 
+    // javascripts/users-table.js
+    "USERSTABLE_USER_CREATED" => "Utilisateur '{name}' créé",
+    "USERSTABLE_USER_NOT_CREATED" => "Utilisateur '{name}' non créé : {error}",
+    'USERSTABLE_USER_DELETED' => 'L\'utilisateur "{username}" a été supprimé.',
+    'USERSTABLE_USER_NOT_DELETED' => 'L\'utilisateur "{username}" n\'a pas été supprimé.',
+
     // /javascripts/yeswiki-base.js
     "DATATABLES_PROCESSING" => "Traitement en cours...",
     "DATATABLES_SEARCH" => "Rechercher&nbsp;:",
