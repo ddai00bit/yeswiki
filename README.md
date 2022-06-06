@@ -1,50 +1,50 @@
 # YesWiki
 
-[YesWiki](https://yeswiki.net) is a Free Software under the AGPL licence, made for creating and managing your website, in a collaborative way.
+[YesWiki] (https://yeswiki.net) là Phần mềm Miễn phí theo giấy phép AGPL, được tạo ra để tạo và quản lý trang web của bạn, theo cách hợp tác.
 
-[YesWiki](https://yeswiki.net) allows any web user, online, with any browser, to :
+[YesWiki] (https://yeswiki.net) cho phép mọi người dùng web, trực tuyến, với bất kỳ trình duyệt nào, có thể:
 
-- create, delete, edit or comment on the pages of a site, with any number of editors or pages.
-- manage access rights for each page (read, write, or comment) for a user or a group.
-- layout a page content in a very intuitive and visual way, using formatting rules which require no technical skills.
-- publish immediately any creation or modification of a page.
-- analyze and manage the whole site through simple functions : site map, list of users, most recently modified or commented pages, etc.
-- a set of templates to suit any site need in term of presentation
-- ability for each part of a site to act as Wiki page : title, header, menus, footer etc. can be easily edited from a browser.
-- a light but strong anti-spam solution.
-- the possibility to embed documents in a page : pictures, mp3, videos, mind maps etc.
-- a plugin manager and numerous extensions : user oriented database manager, tags, contact forms, etc.
+- tạo, xóa, chỉnh sửa hoặc nhận xét trên các trang của một trang web, với bất kỳ số lượng trình chỉnh sửa hoặc trang nào.
+- quản lý quyền truy cập cho mỗi trang (đọc, viết hoặc bình luận) cho một người dùng hoặc một nhóm.
+- bố cục nội dung trang một cách trực quan và trực quan, sử dụng các quy tắc định dạng không yêu cầu kỹ năng kỹ thuật.
+- xuất bản ngay lập tức bất kỳ sáng tạo hoặc sửa đổi nào của một trang.
+- phân tích và quản lý toàn bộ trang web thông qua các chức năng đơn giản: sơ đồ trang web, danh sách người dùng, các trang được sửa đổi hoặc nhận xét gần đây nhất, v.v.
+- một tập hợp các mẫu để phù hợp với bất kỳ nhu cầu nào của trang web về mặt trình bày
+- khả năng cho mỗi phần của trang web hoạt động như một trang Wiki: tiêu đề, đầu trang, menu, chân trang, v.v. có thể dễ dàng chỉnh sửa từ trình duyệt.
+- một giải pháp chống thư rác nhẹ nhưng mạnh mẽ.
+- khả năng nhúng tài liệu vào một trang: hình ảnh, mp3, video, bản đồ tư duy, v.v.
+- trình quản lý plugin và nhiều tiện ích mở rộng: trình quản lý cơ sở dữ liệu hướng người dùng, thẻ, biểu mẫu liên hệ, v.v.
 
-## Installation
+## Cài đặt
 
-YesWiki can be installed in about ten minutes on a server which supports **PHP >= 7.3** and a **MySQL >= 5.6** database. Once installed, the YesWiki site is working immediately, and can be managed online from a web browser.
+YesWiki có thể được cài đặt trong khoảng mười phút trên máy chủ hỗ trợ ** PHP> = 7.3 ** và cơ sở dữ liệu ** MySQL> = 5.6 **. Sau khi được cài đặt, trang YesWiki sẽ hoạt động ngay lập tức và có thể được quản lý trực tuyến từ trình duyệt web.
 
-[More detailled install instructions in the INSTALL.md file](INSTALL.md).
+[Thêm hướng dẫn cài đặt được tách ra trong tệp INSTALL.md] (INSTALL.md).
 
-## History
+## Lịch sử
 
-YesWiki grew out of a French language version of [WakkaWiki](https://en.wikipedia.org/wiki/WakkaWiki) called [Wikini](http://wikini.net), and hence has strong French language support.
+YesWiki đã phát triển từ phiên bản tiếng Pháp của [WakkaWiki] (https://en.wikipedia.org/wiki/WakkaWiki) được gọi là [Wikini] (http://wikini.net) và do đó có hỗ trợ tiếng Pháp mạnh mẽ.
 
-## Authors and contributors
+## Tác giả và cộng tác viên
 
-### Initial WakkaWiki author
+### Tác giả ban đầu của WakkaWiki
 
 - 2002, 2003 Hendrik Mans <hendrik@mans.de>
 
-### Wikini authors
+### Tác giả Wikini
 
 - 2003 Carlo ZOTTMANN
 - 2002, 2003, 2004 David DELON
 - 2002, 2003, 2004 Charles NEPOTE
 - 2002, 2003, 2004 Patrick PAUL
-- 2003  Eric DELORD
-- 2003, 2004  Eric FELDSTEIN
+- 2003 Eric DELORD
+- 2003, 2004 Eric FELDSTEIN
 - 2003 Jean-Pascal MILCENT
 - 2003 Jéréme DESQUILBET
 - 2003 Erus UMBRAE
 - 2004 David VANTYGHEM
-- 2004 Jean Christophe ANDRE
+- Năm 2004 Jean Christophe ANDRE
 
-### YesWiki authors
+### Các tác giả của YesWiki
 
-See <https://github.com/YesWiki/yeswiki/graphs/contributors>
+Xem <https://github.com/YesWiki/yeswiki/graphs/contributor>
